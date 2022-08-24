@@ -1,0 +1,70 @@
+
+package atividadejava;
+
+import java.util.Scanner;
+
+public class Atividadejava {
+
+    public static void main(String[] args) {
+        
+    Scanner entrada = new Scanner(System.in);
+    
+    double quant =0, total =0;
+    
+    int tabela =0;
+    
+    double desconto=0;
+    
+    int x =1;
+    double a=0, b=0, c=0, d=0;
+    
+    System.out.println("OLÁ! Escolha um produto da tabela.");
+     System.out.println("Para ir a tabela digite: 10");
+     tabela = entrada.nextInt();
+    
+    while(x==10){
+    System.out.println("codigo 1 - Boracha = 5,90");
+    
+    System.out.println("codigo 1 - lapis = 7,99");
+    
+    System.out.println("codigo 1 - Caderno pequeno = 15,90");
+    
+    System.out.println("codigo 1 - mochila = 55,90");
+    
+    System.out.println("informe um numero entre 1 a 4;");
+    int codigo = entrada.nextInt();
+    
+    switch (codigo){
+        case 1:
+            System.err.println("informe a quantidade");
+            quant = entrada.nextDouble();
+            a = 5.90*quant;
+            break;
+        case 2:
+            System.err.println("informe a quantidade");
+            quant = entrada.nextDouble();
+            b = 7.99*quant;
+            break;
+        case 3:
+            System.err.println("informe a quantidade");
+            quant = entrada.nextDouble();
+            c = 15.90*quant;
+            break;
+        case 4:
+            System.err.println("informe a quantidade");
+            quant = entrada.nextDouble();
+            d = 55.90*quant;
+            break;
+            default: System.err.println("não quer compra nada ?");
+            
+    } 
+    System.out.println("Deseja voltar á tabela digite 10 ou finalizar o programa numero aleatorio");
+            x = entrada.nextInt();
+    }
+    total =a+b+c+d;
+    desconto = total-(total*10)/100;
+    System.out.println("O valor total foi: "+ total);
+    System.out.println("O valor total com desconto de 10% foi: "+ desconto);
+    System.out.println("Você comprou "+ quant + " produtos.");
+    }
+    }
