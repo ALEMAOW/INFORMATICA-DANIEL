@@ -15,15 +15,15 @@ public class JavaApplication1 {
     switch (cod){
         case "A":
             System.out.println("produto sento neste pais");
-            System.out.println("valor: "+conta);
+            System.out.println("conta: "+conta);
             break;
         case "B":
-            valor=valor+(valor*15)/100;
-            System.out.println("valor com aumento de 15%"+conta);
+            conta=conta+(conta*15)/100;
+            System.out.println("conta com aumento de 15%"+conta);
             break;
         case "C":
-            valor=valor+(valor*15)/100;
-            System.out.println("valor com aumento 20%"+conta);
+           conta=conta+(conta*15)/100;
+            System.out.println("contar com aumento 20%"+conta);
             break;
             
         default:
