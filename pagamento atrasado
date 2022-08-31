@@ -1,0 +1,25 @@
+package DanielSausen;
+
+import java.util.Scanner;
+
+public class Atividade {
+    
+public static void main(String[] args) {
+    
+
+    Scanner entrada = new Scanner (System.in);
+    double valor =0;
+    int atraso =0;
+    double dinheiro =0;
+    System.out.println("informe quantos meses foi o atraso");
+    dinheiro = entrada.nextDouble();
+    
+    System.out.println("informe quantos meses foi o atraso");
+    atraso = entrada.nextInt();
+    
+    valor = dinheiro + (valor*10)/100;
+    valor = valor * atraso;
+    
+    System.out.println("informe quantos tem que pagar" + valor);
+}
+}
