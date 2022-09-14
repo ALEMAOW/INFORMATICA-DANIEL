@@ -1,0 +1,27 @@
+package conta;
+public class Conta {
+      int pumero;
+double senha;
+      String cliente;
+double saldo, limite;
+      int numero;
+    void depositar (double quantidade){
+        this.saldo+= quantidade;
+        System.out.println("deposito:"+ quantidade);
+        System.out.println("saldo atual" +this.saldo);
+        this .saldo+=this.limite;
+        System.out.println("saldo + limite "+this.saldo);
+        
+        
+    }
+    boolean sacar (double quantidade){
+    if (quantidade <this.saldo){
+        this.saldo=this.saldo-quantidade;
+        System.out.println("quantidade sacada: "+quantidade);
+        System.out.println("saldo atual:"this.saldo);
+        this.saldo+=this.limite;
+        System.out.println("Saldo + limite"+ this.saldo);
+    }
+    
+    }
+}
