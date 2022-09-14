@@ -1,0 +1,15 @@
+
+package conta;
+
+public class cliente1 {
+    public static void main(String[] args){
+    Conta Jose;
+        Jose = new Conta();
+        Jose.cliente= "Jose da Silva";
+        Jose.saldo= (1000);
+        Jose.limite= (2000);
+        Jose.senha= (23456);
+        Jose.numero= (5678);
+        Jose.depositar(100);
+    }
+    }
